@@ -1,0 +1,30 @@
+{
+  "name": "mu-jquery-widget-runkit",
+  "version": "0.0.1",
+  "description": "mu-jquery-widget Selectize widget",
+  "main": "",
+  "scripts": {
+    "release": "standard-version",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mu-lib/mu-jquery-widget-runkit.git"
+  },
+  "author": "Mikael Karon <mikael@karon.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mu-lib/mu-jquery-widget-runkit/issues"
+  },
+  "homepage": "https://github.com/mu-lib/mu-jquery-widget-runkit#readme",
+  "dependencies": {
+    "mu-jquery-runkit": "^0.2.1",
+    "mu-jquery-widget": "^14.0.0",
+    "selectize": "^0.12.4"
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "mu-jquery-app": "^17.0.2",
+    "standard-version": "^4.0.0"
+  }
+}

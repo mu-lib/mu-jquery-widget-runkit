@@ -1,0 +1,25 @@
+{
+  "name": "mu-jquery-widget-runkit",
+  "authors": [
+    "Mikael Karon <mikael@karon.se>"
+  ],
+  "description": "mu-jquery-widget RunKit widget",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/mu-lib/mu-jquery-widget-runkit#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "examples"
+  ],
+  "dependencies": {
+    "mu-jquery-runkit": "^0.2.1",
+    "mu-jquery-widget": "^14.0.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "mu-jquery-app": "^17.0.2"
+  }
+}
