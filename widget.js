@@ -1,16 +1,12 @@
-(function (modules, factory) {
-  var root = this;
-
+(function (root, factory) {
   if (typeof define === "function" && define.amd) {
-    define(modules, factory);
+    define(["mu-jquery-widget/widget", "mu-jquery-runkit/jquery.runkit"], factory);
   } else if (typeof module === "object" && module.exports) {
-    module.exports = factory.apply(root, modules.map(require));
+    module.exports = factory(require("mu-jquery-widget/widget"), require("mu-jquery-runkit/jquery.runkit"));
   } else {
-    root["mu-jquery-widget-runkit/widget"] = factory.apply(root, modules.map(function (m) {
-      return root[m];
-    }));
+    root["mu-jquery-widget-runkit/widget"] = factory(root["mu-jquery-widget/widget"], root["mu-jquery-runkit/jquery.runkit"]);
   }
-})(["mu-jquery-widget/widget", "mu-jquery-runkit/jquery.runkit"], function (widget, runkit) {
+})(this, function (widget, runkit) {
   return widget.extend({
     "on/initialize": function ($event) {
       var me = this;
